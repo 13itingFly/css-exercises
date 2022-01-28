@@ -9,25 +9,35 @@ img {
 
 .flbox {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-content: center;
-  row-gap: 32px;
+  column-gap: 52px;
 }
 
 .title {
+  display: flex;
+  padding-bottom: 32px;
   font-size: 36px;
   font-weight: 900;
+  justify-content: center;
 }
 
 .info {
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
   align-content: center;
   flex: 0 0 200px;
   column-gap: 52px;
   
 }
+
+.text {
+  text-align: center;
+}
+
 
 
 /* do not edit this footer */
