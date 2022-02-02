@@ -20,7 +20,6 @@ button {
   border-radius: 8px;
   background: #eee;
   padding: 5px 10px;
-  flex-shrink: 0;
 }
 
 .content {
@@ -41,11 +40,9 @@ input {
 
 #headFoot {
   display: flex;
-  flex-wrap: nowrap;
-  flex-flow: row;
+  flex-flow: row nowrap;
+  align-items: flex-start;
   background-color: #eeeeee;
-  align-content: stretch;
-  padding: 5px;
 }
 
 a {
@@ -56,14 +53,21 @@ a {
 li {
   list-style-type: none;
   display: inline;
+  height: max-content;
   margin-right: 10px;
+  padding: 0;
 }
 
 .left-links {
+  display: flex;
+  align-content: flex-start;
   margin-right: auto;
-  margin-left: -30px;
+  margin-left: -30px
 }
 
 .right-links {
+  display: flex;
+  align-content: flex-end;
   margin-left: auto;
+  margin-right: 10px;
 }
